@@ -14,7 +14,7 @@ echo "Activating Conda environment"
 source activate $ENV_NAME
 
 echo "Installing essential packages"
-conda-forge install -y pandas numpy scipy h5py geopandas geopy matplotlib python-dateutil textwrap3 jupyterlab ipykernel
+conda install -y -c conda-forge pandas numpy scipy h5py geopandas geopy matplotlib python-dateutil textwrap3 jupyterlab ipykernel
 
 ### to avoid potential conflicts among packages, using conda forge to install first and then pip to install the rest
 
